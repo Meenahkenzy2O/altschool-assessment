@@ -1,0 +1,120 @@
+* { margin: 0; padding: 0; border: 0; box-sizing: border-box; }
+body { position: relative; width: 1440px; color: #141414; background: #fff; font-family: 'Gilroy-Medium', sans-serif; }
+a { text-decoration: none; color: inherit; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+ul { list-style: none; }
+
+header { position: absolute; z-index: 1; top: 12px; left: 145.09px; width: 1150px; height: 44px; display: flex; align-items: center; gap: 140px; }
+.nav-left { flex: 0 0 155px; }
+.logo { display: flex; align-items: flex-start; gap: 8px; padding: 8px; width: 155px; height: 40px; }
+.logo-icon { flex: 0 0 24px; width: 24px; height: 24px; }
+.logo-text { width: 99px; height: 24px; display: flex; align-items: center; font-family: 'Gilroy-Bold', sans-serif; font-size: 24px; line-height: 32px; color: #0065fe; }
+/* Original header has 140px between its three children. */
+.nav-right { display: flex; align-items: center; gap: 140px; }
+.nav-menu { display: flex; align-items: center; gap: 40px; width: 504px; height: 24px; flex-shrink: 0; }
+.nav-menu li { flex-shrink: 0; }
+.nav-menu li:nth-child(2) { width: 100px; }
+.nav-link { font-size: 18px; line-height: 21px; white-space: nowrap; }
+.nav-menu li:first-child .nav-link { color: #0065fe; }
+.nav-actions { display: flex; align-items: center; gap: 24px; width: 211px; height: 44px; flex-shrink: 0; }
+.btn-login { width: 45px; font-family: 'Gilroy-SemiBold', sans-serif; font-size: 16px; line-height: 19px; color: #0065fe; white-space: nowrap; }
+.btn-signup { width: 142px; height: 44px; display: flex; justify-content: center; align-items: center; padding: 12px 24px; border-radius: 100px; background: #0065fe; color: #fff; font-family: 'Gilroy-SemiBold', sans-serif; font-size: 16px; line-height: 12px; white-space: nowrap; }
+
+/* Hero: the HTML omits Figma's intermediate title/description wrapper. */
+.hero-section { position: relative; width: 1440px; height: 1024px; background: #fff; }
+.hero-content { position: absolute; top: 162px; left: 246px; width: 948px; height: 389px; display: flex; flex-direction: column; align-items: center; }
+.hero-title { flex: 0 0 200px; width: 948px; height: 200px; font-family: 'Gilroy-Bold', sans-serif; font-size: 48px; line-height: 96px; text-align: center; }
+.hero-title span { color: #005ae2; }
+.hero-description { flex: 0 0 105px; width: 781px; height: 105px; margin-top: 8px; font-size: 18px; line-height: 28px; text-align: center; }
+.hero-buttons { display: flex; align-items: center; gap: 56px; width: 282px; height: 44px; margin-top: 32px; }
+.hero-button { width: 142px; height: 44px; padding: 12px 24px; border-radius: 100px; background: #0065fe; color: #fff; font-family: 'Gilroy-SemiBold', sans-serif; font-size: 16px; line-height: 12px; }
+.hero-second-button .clear-button { display: block; width: 84px; height: 20px; color: #0065fe; font-family: 'Gilroy-SemiBold', sans-serif; font-size: 16px; line-height: 19px; white-space: nowrap; }
+/* Empty HTML container: frame geometry only; illustration asset is missing. */
+.hero-design { position: absolute; left: 434px; top: 631px; width: 768px; height: 224px; padding: 40px 60px; border: .5px solid #005ae2; border-radius: 24px; background: rgba(254,254,254,.1); backdrop-filter: blur(106px); }
+
+/* Stats and features together occupy the original 982px Figma frame. */
+.desktop-10-stats { width: 1440px; height: 220px; background: #f9fbfd; }
+.desktop-10-stats > .container { width: 1446px; height: 220px; margin-left: -3px; padding: 60px 140px; display: flex; align-items: center; justify-content: center; gap: 120px; }
+.desktop-10-stats h2 { width: 337px; flex-shrink: 0; font-family: 'Gilroy-Bold', sans-serif; font-size: 40px; line-height: 48px; }
+.desktop-10-stats h2 span, .desktop-1-features h2 span, .desktop-11-pricings .container h3 span { color: #005ae2; }
+.stats-grid { width: 709px; height: 100px; display: grid; grid-template-columns: 88px 123px 143px 123px; column-gap: 72px; align-items: start; }
+.stats-card { display: flex; flex-direction: column; gap: 4px; }
+.stats-card h3 { font-family: 'Gilroy-SemiBold', sans-serif; font-size: 32px; line-height: 40px; }
+.stats-card p { font-size: 16px; line-height: 24px; }
+.desktop-1-features { position: relative; width: 1440px; height: 762px; padding: 128px 117.9px 130px 120px; display: flex; align-items: flex-start; gap: 96px; }
+.desktop-1-features > .container { width: 398.1px; flex-shrink: 0; }
+.desktop-1-features aside { display: flex; flex-direction: column; align-items: flex-end; gap: 16px; }
+.desktop-1-features aside h2 { width: 398.1px; height: 48px; padding-left: 16.1px; font-family: 'Gilroy-Bold', sans-serif; font-size: 40px; line-height: 32px; white-space: nowrap; }
+.desktop-1-features aside p { width: 370px; font-size: 16px; line-height: 28px; }
+.features-grid { width: 708px; display: grid; grid-template-columns: repeat(2,340px); column-gap: 28px; row-gap: 64px; }
+/* The first article is an extra D placeholder, absent from Figma. */
+.features-card:first-child { display: none; }
+.features-card { width: 340px; min-height: 220px; padding-top: 96px; }
+.features-card h3 { font-family: 'Gilroy-SemiBold', sans-serif; font-size: 32px; line-height: 28px; margin-bottom: 16px; }
+.features-card p { font-size: 16px; line-height: 24px; }
+
+/* Pricing: card coordinates translated into the group at (176,218). */
+.desktop-11-pricings { position: relative; width: 1440px; height: 1073px; background: #fff; }
+.desktop-11-pricings > .container { position: absolute; top: 42px; left: 431.95px; width: 576.1px; padding-left: 16.1px; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.desktop-11-pricings .container h3 { width: 560px; font-family: 'Gilroy-Bold', sans-serif; font-size: 40px; line-height: 48px; text-align: center; }
+.desktop-11-pricings .container p { width: 556px; font-size: 16px; line-height: 24px; text-align: center; }
+.pricings-grids { position: absolute; left: 176px; top: 218px; width: 1088px; height: 627px; }
+.pricings-cards1, .pricings-cards2, .pricings-cards { position: absolute; border-radius: 12px; }
+.pricings-cards1, .pricings-cards { top: 86px; width: 379px; height: 455px; border: .4px solid #005ae2; background: #fff; box-shadow: 0 4px 8px rgba(0,0,0,.05); }
+.pricings-cards1 { left: 0; padding: 24px 0 0 87px; }
+.pricings-cards { left: 709px; padding: 24px 0 0 86px; }
+.pricings-cards2 { z-index: 1; left: 339px; top: 0; width: 410px; height: 627px; padding: 95px 0 0 65px; color: #fff; background: linear-gradient(180deg,#1e3448 99.99%,rgba(30,52,72,0) 100%); filter: drop-shadow(0 4px 8px rgba(0,0,0,.05)); }
+.pricings-grids h4 { font-family: 'Gilroy-Medium', sans-serif; font-weight: 400; font-size: 24px; line-height: 32px; margin-bottom: 34px; }
+.pricings-cards2 h4 { margin-bottom: 24px; }
+.pricings-grids h3 { font-family: 'Gilroy-Bold', sans-serif; font-size: 40px; line-height: 48px; margin-bottom: 8px; }
+.pricings-grids p { font-size: 20px; line-height: 32px; white-space: nowrap; margin-bottom: 16px; }
+.pricings-cards2 p { margin-bottom: 24px; }
+.pricings-grids ul { display: flex; flex-direction: column; gap: 24px; }
+.pricings-grids li { font-size: 14px; line-height: 24px; padding-left: 24px; white-space: nowrap; }
+.pricings-button { position: absolute; left: 514px; top: 913px; display: flex; gap: 12px; width: 412px; height: 48px; }
+.price-button, .price-coloredbutton { width: 200px; height: 48px; padding: 12px 24px; border-radius: 100px; font-family: 'Gilroy-SemiBold', sans-serif; font-size: 16px; line-height: 12px; }
+.price-button { border: 1px solid #0065fe; color: #0065fe; background: #fff; }
+.price-coloredbutton { background: #0065fe; color: #fff; }
+
+/* Form: panel drawn behind siblings, since HTML has no panel wrapper. */
+.form { position: relative; width: 1440px; height: 523px; background: linear-gradient(180deg,#1e3448 99.99%,rgba(30,52,72,0) 100%); }
+.form::before { content: ''; position: absolute; left: 482px; top: 83.5px; width: 476px; height: 355px; background: #fff; border-radius: 12px; }
+.smallform { position: absolute; left: 524px; top: 125.5px; width: 392px; display: grid; grid-template-columns: 202px 178px; gap: 24px 12px; }
+.smallform input { width: 100%; height: 48px; border: 1px solid #3284ff; border-radius: 12px; padding: 8px 12px; font-size: 12px; line-height: 18px; color: #3284ff; background: #fff; min-width: 0; }
+.smallform #URL { grid-column: 1 / -1; height: 55px; }
+.smallform #Domain { padding: 18px 20px; font-size: 14px; }
+.smallform input::placeholder { color: #3284ff; opacity: 1; }
+.form-button { position: absolute; left: 524px; top: 276.5px; width: 392px; height: 48px; padding: 12px 24px; border-radius: 100px; background: #005ae2; color: #fff; font-family: 'Gilroy-SemiBold', sans-serif; font-size: 14px; line-height: 12px; }
+.form > p { position: absolute; left: 534px; top: 346.5px; width: 373px; font-size: 14px; line-height: 20px; color: #4991ff; }
+.form em { font-style: normal; font-family: 'Gilroy-Bold', sans-serif; }
+
+/* FAQs retain native details interaction. */
+.FAQs { position: relative; width: 1440px; min-height: 1153px; background: #fff; padding-top: 43px; padding-bottom: 155px; }
+.FAQs > .container { width: 792px; margin: 0 auto; }
+.FAQs h2 { height: 48px; font-family: 'Gilroy-Bold', sans-serif; font-size: 40px; line-height: 48px; text-align: center; margin-bottom: 64px; }
+.faqs-section { display: flex; flex-direction: column; gap: 32px; }
+.faqs-item { width: 792px; padding-bottom: 16px; border-bottom: 1px solid #d6d6d6; }
+.faqs-item summary { position: relative; padding-right: 48px; font-size: 20px; line-height: 32px; list-style: none; cursor: pointer; }
+.faqs-item summary::-webkit-details-marker { display: none; }
+.faqs-item summary::after { content: '+'; position: absolute; right: 0; top: 0; width: 24px; text-align: center; }
+.faqs-item[open] summary::after { content: '−'; }
+.faqs-item p { margin-top: 16px; font-size: 16px; line-height: 32px; }
+
+/* Only outer geometry was exported for the pre-footer. Inner styles adapted. */
+.pre-footer { width: 1440px; height: 299px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 32px; color: #fff; background: #1e3448; }
+.smallfooter h2 { font-family: 'Gilroy-Bold', sans-serif; font-size: 40px; line-height: 48px; }
+.smallfootbtn { width: 200px; height: 48px; padding: 12px 24px; border-radius: 100px; color: #fff; background: #005ae2; font-family: 'Gilroy-SemiBold', sans-serif; font-size: 16px; }
+
+/* footerimg contains the links in this HTML; keep it full-size and static. */
+.thefooter { position: relative; width: 1440px; height: 561px; background: #fff; }
+.footerimg { position: static; }
+.footerimg > img { position: absolute; top: 103px; left: 211px; width: 24px; height: 24px; }
+.footerimg > h3 { position: absolute; top: 103px; left: 251px; font-family: 'Gilroy-Bold', sans-serif; font-size: 24px; line-height: 32px; }
+.socials { position: absolute; left: 203px; top: 167px; width: 184px; height: 24px; padding: 0 8px; display: flex; gap: 24px; }
+.socials img { width: 24px; height: 24px; }
+.footer-links-grid { position: absolute; left: 426px; top: 95px; width: 812px; display: grid; grid-template-columns: 180px 201px 211px 148px; gap: 24px; }
+.footer-col { padding: 0 24px; display: flex; flex-direction: column; gap: 8px; }
+.footer-col h4 { font-family: 'Gilroy-Bold', sans-serif; font-size: 16px; line-height: 24px; color: #071827; }
+.footer-col ul li a { font-size: 16px; line-height: 24px; color: #112232; }
+.footer-bottom { position: absolute; left: 1017px; top: 502px; width: 296px; height: 20px; padding: 0 12px; font-size: 14px; line-height: 20px; color: #112232; }
